@@ -1,13 +1,18 @@
 <?php
 
-$servername = "db"; 
-$username = "root";
-$password = "root"; 
-$dbname = "tri2go_db";
+$servername = "mysql-add1e04-justinesmontoya06.j.aivencloud.com"; 
+$username = "avnadmin";
+$password = "PASTE_YOUR_REVEALED_PASSWORD_HERE"; 
+$dbname = "defaultdb"; // Note: Aiven's default is "defaultdb" unless you renamed it
+$port = 12132;
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection including the port
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+// Optional: Force SSL if your code requires it, but mysqli often handles it.
 ?>
