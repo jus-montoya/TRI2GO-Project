@@ -2,7 +2,7 @@
 
 $servername = "mysql-add1e04-justinesmontoya06.j.aivencloud.com"; 
 $username = "avnadmin";
-$password = "PASTE_YOUR_REVEALED_PASSWORD_HERE"; 
+$password = "<redacted>"; 
 $dbname = "defaultdb"; // Note: Aiven's default is "defaultdb" unless you renamed it
 $port = 12132;
 
